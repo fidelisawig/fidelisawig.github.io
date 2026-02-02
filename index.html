@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fidelis Awig Atmoko | GIS & Data Specialist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --color-bg: #0a0a0a;
@@ -141,7 +144,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 8rem 4rem 4rem 8rem;
+            padding: 8rem 4rem 12rem 8rem;
             position: relative;
             z-index: 2;
         }
@@ -185,6 +188,8 @@
             gap: 1.5rem;
             opacity: 0;
             animation: fadeUp 0.8s ease 0.8s forwards;
+            position: relative;
+            z-index: 3;
         }
 
         .btn {
@@ -234,7 +239,7 @@
             width: 140%;
             height: 140%;
             opacity: 0.15;
-            background: 
+            background:
                 radial-gradient(circle at 30% 40%, var(--color-accent) 0%, transparent 50%),
                 radial-gradient(circle at 70% 60%, rgba(201, 169, 98, 0.5) 0%, transparent 40%);
             filter: blur(60px);
@@ -304,6 +309,7 @@
             gap: 4rem;
             opacity: 0;
             animation: fadeUp 0.8s ease 1.2s forwards;
+            z-index: 1;
         }
 
         .stat {
@@ -663,7 +669,7 @@
         .contact-bg {
             position: absolute;
             inset: 0;
-            background: 
+            background:
                 radial-gradient(circle at 20% 80%, rgba(201, 169, 98, 0.1) 0%, transparent 40%),
                 radial-gradient(circle at 80% 20%, rgba(201, 169, 98, 0.05) 0%, transparent 40%);
         }
@@ -738,6 +744,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -745,18 +752,37 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.15; }
-            50% { transform: scale(1.1); opacity: 0.2; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.15;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.2;
+            }
         }
 
         @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Scroll Animations */
@@ -778,7 +804,7 @@
             }
 
             .hero-content {
-                padding: 8rem 4rem 4rem;
+                padding: 8rem 4rem 12rem;
             }
 
             .hero-visual {
@@ -795,7 +821,10 @@
                 gap: 3rem;
             }
 
-            .experience, .projects, .education, .contact {
+            .experience,
+            .projects,
+            .education,
+            .contact {
                 padding: 6rem 4rem;
             }
 
@@ -818,7 +847,7 @@
             }
 
             .hero-content {
-                padding: 6rem 2rem 3rem;
+                padding: 6rem 2rem 10rem;
             }
 
             .hero-stats {
@@ -830,7 +859,11 @@
                 font-size: 2rem;
             }
 
-            .about, .experience, .projects, .education, .contact {
+            .about,
+            .experience,
+            .projects,
+            .education,
+            .contact {
                 padding: 4rem 2rem;
             }
 
@@ -868,6 +901,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navbar">
@@ -885,7 +919,8 @@
         <div class="hero-content">
             <p class="hero-label">GIS Specialist & Data Analyst</p>
             <h1 class="hero-title">Mapping <em>Data</em><br>Into Decisions</h1>
-            <p class="hero-subtitle">Transforming complex spatial datasets into actionable insights for climate resilience, urban development, and environmental policy across Indonesia.</p>
+            <p class="hero-subtitle">Transforming complex spatial datasets into actionable insights for climate
+                resilience, urban development, and environmental policy across Indonesia.</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -926,10 +961,15 @@
         </div>
         <div class="about-right reveal">
             <p class="about-text">
-                <strong>Results-driven Data Analyst and GIS Specialist</strong> with extensive experience in spatial analysis, data visualization, and project coordination within large-scale international development programs across Indonesia, including Papua.
+                <strong>Results-driven Data Analyst and GIS Specialist</strong> with extensive experience in spatial
+                analysis, data visualization, and project coordination within large-scale international development
+                programs across Indonesia, including Papua.
             </p>
             <p class="about-text">
-                I specialize in managing complex datasets and technical workflows for <strong>USAID and UN agencies</strong> to drive environmental compliance, service delivery improvement, and climate resilience. My work emphasizes GEDSI-sensitive participatory planning and capacity building for local government partners.
+                I specialize in managing complex datasets and technical workflows for <strong>USAID and UN
+                    agencies</strong> to drive environmental compliance, service delivery improvement, and climate
+                resilience. My work emphasizes GEDSI-sensitive participatory planning and capacity building for local
+                government partners.
             </p>
             <div class="skills-grid">
                 <div class="skill-card">
@@ -966,7 +1006,9 @@
                 <div class="timeline-content">
                     <h3>Data Analysis & Visualization Specialist</h3>
                     <p class="timeline-org">Kementerian Pekerjaan Umum, Jakarta</p>
-                    <p class="timeline-desc">Providing critical data insight for the National Roadmap on Domestic Wastewater Management, developing interactive dashboards enabling evidence-based decisions at Ministry leadership level.</p>
+                    <p class="timeline-desc">Providing critical data insight for the National Roadmap on Domestic
+                        Wastewater Management, developing interactive dashboards enabling evidence-based decisions at
+                        Ministry leadership level.</p>
                 </div>
             </div>
             <div class="timeline-item reveal">
@@ -974,7 +1016,9 @@
                 <div class="timeline-content">
                     <h3>GIS Specialist</h3>
                     <p class="timeline-org">Dinas PUPR Provinsi Banten</p>
-                    <p class="timeline-desc">Conducted spatial analysis for strategic economic development in border regions, processing large thematic datasets using Python for Strategic Environmental Analysis.</p>
+                    <p class="timeline-desc">Conducted spatial analysis for strategic economic development in border
+                        regions, processing large thematic datasets using Python for Strategic Environmental Analysis.
+                    </p>
                 </div>
             </div>
             <div class="timeline-item reveal">
@@ -982,7 +1026,9 @@
                 <div class="timeline-content">
                     <h3>GIS/Mapping Specialist & Regional CRWRM Specialist</h3>
                     <p class="timeline-org">DAI Global LLC – USAID Urban WASH (Tangguh)</p>
-                    <p class="timeline-desc">Led complex spatial analysis for climate risk assessments and watershed delineation. Collaborated with GEDSI team for participatory action planning through inclusive stakeholder engagement.</p>
+                    <p class="timeline-desc">Led complex spatial analysis for climate risk assessments and watershed
+                        delineation. Collaborated with GEDSI team for participatory action planning through inclusive
+                        stakeholder engagement.</p>
                 </div>
             </div>
             <div class="timeline-item reveal">
@@ -990,7 +1036,8 @@
                 <div class="timeline-content">
                     <h3>GIS Associate</h3>
                     <p class="timeline-org">DAI Global LLC – USAID IUWASH PLUS</p>
-                    <p class="timeline-desc">Supported MIS deployment across diverse Indonesian regions including Papua. Oversaw development of WebGIS and Desludging applications for water utility companies.</p>
+                    <p class="timeline-desc">Supported MIS deployment across diverse Indonesian regions including Papua.
+                        Oversaw development of WebGIS and Desludging applications for water utility companies.</p>
                 </div>
             </div>
             <div class="timeline-item reveal">
@@ -998,7 +1045,9 @@
                 <div class="timeline-content">
                     <h3>GIS Assistant</h3>
                     <p class="timeline-org">IOM – UN Migration Agency, Banda Aceh</p>
-                    <p class="timeline-desc">Developed disaster risk maps and spatial models for hazard vulnerability assessment. Contributed to the Provincial Disaster Management Plan through strategic geospatial analysis.</p>
+                    <p class="timeline-desc">Developed disaster risk maps and spatial models for hazard vulnerability
+                        assessment. Contributed to the Provincial Disaster Management Plan through strategic geospatial
+                        analysis.</p>
                 </div>
             </div>
         </div>
@@ -1014,7 +1063,8 @@
             <div class="project-card reveal">
                 <div class="project-icon">◈</div>
                 <h3>National Wastewater Roadmap</h3>
-                <p>Interactive data dashboards visualizing progress and trends for Indonesia's Sustainable Sanitation targets at ministry level.</p>
+                <p>Interactive data dashboards visualizing progress and trends for Indonesia's Sustainable Sanitation
+                    targets at ministry level.</p>
                 <div class="project-tags">
                     <span class="tag">PowerBI</span>
                     <span class="tag">Policy</span>
@@ -1024,7 +1074,8 @@
             <div class="project-card reveal">
                 <div class="project-icon">◇</div>
                 <h3>Climate Risk Assessment</h3>
-                <p>Complex spatial analysis for watershed delineation and climate vulnerability studies to inform resilience action plans.</p>
+                <p>Complex spatial analysis for watershed delineation and climate vulnerability studies to inform
+                    resilience action plans.</p>
                 <div class="project-tags">
                     <span class="tag">GIS</span>
                     <span class="tag">Climate</span>
@@ -1034,7 +1085,8 @@
             <div class="project-card reveal">
                 <div class="project-icon">◆</div>
                 <h3>Water Conservation Modules</h3>
-                <p>Community-based water stewardship educational frameworks with data-driven ROI evaluations for donor reporting.</p>
+                <p>Community-based water stewardship educational frameworks with data-driven ROI evaluations for donor
+                    reporting.</p>
                 <div class="project-tags">
                     <span class="tag">Training</span>
                     <span class="tag">Community</span>
@@ -1043,7 +1095,8 @@
             <div class="project-card reveal">
                 <div class="project-icon">▣</div>
                 <h3>PDAM WebGIS Platform</h3>
-                <p>Management applications for water utility companies including spatial database systems across Papua and other regions.</p>
+                <p>Management applications for water utility companies including spatial database systems across Papua
+                    and other regions.</p>
                 <div class="project-tags">
                     <span class="tag">WebGIS</span>
                     <span class="tag">Database</span>
@@ -1052,7 +1105,8 @@
             <div class="project-card reveal">
                 <div class="project-icon">◎</div>
                 <h3>Disaster Risk Mapping</h3>
-                <p>Hazard and vulnerability spatial models contributing to Aceh's Provincial Disaster Management Plan.</p>
+                <p>Hazard and vulnerability spatial models contributing to Aceh's Provincial Disaster Management Plan.
+                </p>
                 <div class="project-tags">
                     <span class="tag">DRR</span>
                     <span class="tag">IOM</span>
@@ -1074,7 +1128,8 @@
     <!-- Education Section -->
     <section class="education" id="education">
         <p class="section-label">Background</p>
-        <h2 style="font-family: var(--font-display); font-size: 3rem; font-weight: 400;">Education & <em style="font-style: italic; color: var(--color-accent);">Certifications</em></h2>
+        <h2 style="font-family: var(--font-display); font-size: 3rem; font-weight: 400;">Education & <em
+                style="font-style: italic; color: var(--color-accent);">Certifications</em></h2>
         <div class="education-grid">
             <div class="edu-card reveal">
                 <h3 class="edu-degree">Master's Degree</h3>
@@ -1105,28 +1160,29 @@
         <div class="contact-content">
             <p class="section-label">Get In Touch</p>
             <h2>Let's <em>Connect</em></h2>
-            <p class="contact-text">Interested in collaborating on spatial analysis, data visualization, or development projects? I'd love to hear from you.</p>
+            <p class="contact-text">Interested in collaborating on spatial analysis, data visualization, or development
+                projects? I'd love to hear from you.</p>
             <a href="mailto:fidelis.awig@ymail.com" class="btn btn-primary">Send Email</a>
             <div class="contact-links">
                 <a href="mailto:fidelis.awig@ymail.com" class="contact-link">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
                     </svg>
                     fidelis.awig@ymail.com
                 </a>
                 <a href="https://www.linkedin.com/in/fidelisawig" target="_blank" class="contact-link">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                        <rect x="2" y="9" width="4" height="12"/>
-                        <circle cx="4" cy="4" r="2"/>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
                     </svg>
                     LinkedIn
                 </a>
                 <a href="#" class="contact-link">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
                     </svg>
                     Jakarta Metropolitan Area
                 </a>
@@ -1153,13 +1209,13 @@
 
         // Reveal on scroll
         const reveals = document.querySelectorAll('.reveal');
-        
+
         const revealOnScroll = () => {
             reveals.forEach(el => {
                 const windowHeight = window.innerHeight;
                 const elementTop = el.getBoundingClientRect().top;
                 const revealPoint = 150;
-                
+
                 if (elementTop < windowHeight - revealPoint) {
                     el.classList.add('active');
                 }
@@ -1171,7 +1227,7 @@
 
         // Smooth scroll for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -1184,4 +1240,5 @@
         });
     </script>
 </body>
+
 </html>
