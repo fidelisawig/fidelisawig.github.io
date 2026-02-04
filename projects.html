@@ -394,6 +394,12 @@
             display: block;
             padding: 1rem;
             background: linear-gradient(145deg, #ffffff 0%, #f5f5f5 100%);
+            /* Image protection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
         }
 
         .media-placeholder {
@@ -528,6 +534,12 @@
             display: block;
             padding: 0.75rem;
             background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            /* Image protection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
         }
 
         .gallery-item.full-width img,
@@ -1425,6 +1437,14 @@
         const menuToggle = document.getElementById('menuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Image protection - disable right-click and drag
+        document.querySelectorAll('img').forEach(img => {
+            // Disable right-click
+            img.addEventListener('contextmenu', e => e.preventDefault());
+            // Disable drag
+            img.addEventListener('dragstart', e => e.preventDefault());
+        });
 
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
