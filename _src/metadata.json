@@ -1,0 +1,8 @@
+{
+  "name": "Scientific Publication Map Designer",
+  "description": "A high-precision publication-grade cartographic designer to generate academic-ready vector maps from GeoPackage (GPKG) and GeoJSON. Tailored for scientific journals with custom scales, coordinate graticules, customizable legends, and Indonesian annotations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
