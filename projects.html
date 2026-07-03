@@ -288,6 +288,7 @@
         .project-story {
             padding: 6rem 0;
             border-bottom: 1px solid var(--color-border);
+            scroll-margin-top: 9.5rem;
         }
 
         .project-story:last-of-type {
@@ -805,6 +806,7 @@
 
             .project-story {
                 padding: 3rem 0;
+                scroll-margin-top: 8.5rem;
             }
 
             .story-container {
@@ -954,6 +956,89 @@
                 padding: 2rem 1rem;
             }
         }
+
+        /* Projects Sub-Navigation */
+        .projects-subnav {
+            position: sticky;
+            top: 4.8rem; /* below the main navbar */
+            left: 0;
+            right: 0;
+            background: rgba(10, 15, 26, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 90;
+            transition: all 0.3s ease;
+        }
+
+        .subnav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            overflow-x: auto;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+        }
+
+        .subnav-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .subnav-link {
+            display: block;
+            padding: 1.25rem 0;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .subnav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        .subnav-link:hover {
+            color: var(--color-text);
+        }
+
+        .subnav-link.active {
+            color: var(--color-accent-light);
+        }
+
+        .subnav-link.active::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .projects-subnav {
+                top: 4.3rem;
+            }
+            .subnav-container {
+                padding: 0 1.5rem;
+                justify-content: flex-start;
+                gap: 1.5rem;
+            }
+            .subnav-link {
+                padding: 1rem 0;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 
@@ -999,8 +1084,17 @@
         </div>
     </header>
 
+    <!-- Project Sub-Navigation -->
+    <div class="projects-subnav" id="projectsSubnav">
+        <div class="subnav-container">
+            <a href="#wastewater" class="subnav-link">Wastewater Roadmap</a>
+            <a href="#climate-risk" class="subnav-link">Climate Risk Assessment</a>
+            <a href="#disaster-mapping" class="subnav-link">Disaster Risk Mapping</a>
+        </div>
+    </div>
+
     <!-- Project Story 1: National Wastewater Roadmap -->
-    <article class="project-story">
+    <article class="project-story" id="wastewater">
         <div class="story-container">
             <div class="story-header">
                 <div class="story-info">
@@ -1107,7 +1201,7 @@
     </article>
 
     <!-- Project Story 2: Climate Risk Assessment -->
-    <article class="project-story">
+    <article class="project-story" id="climate-risk">
         <div class="story-container">
             <div class="story-header reverse">
                 <div class="story-info">
@@ -1263,7 +1357,7 @@
     </article>
 
     <!-- Project Story 3: Disaster Risk Mapping -->
-    <article class="project-story">
+    <article class="project-story" id="disaster-mapping">
         <div class="story-container">
             <div class="story-header">
                 <div class="story-info">
@@ -1461,6 +1555,31 @@
                 document.body.style.overflow = '';
             });
         });
+
+        // Scroll spy for sub-navigation
+        const subnavLinks = document.querySelectorAll('.subnav-link');
+        const sections = document.querySelectorAll('.project-story');
+
+        const scrollSpy = () => {
+            let currentActiveSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                // Subtract navbar + subnav height + small offset
+                if (window.scrollY >= sectionTop - 180) {
+                    currentActiveSectionId = section.getAttribute('id');
+                }
+            });
+
+            subnavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentActiveSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', scrollSpy);
+        scrollSpy();
     </script>
 </body>
 
