@@ -491,6 +491,28 @@
             font-weight: 500;
         }
 
+        .impact-list {
+            display: grid;
+            gap: 1rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .impact-item {
+            padding: 1.25rem;
+            border: 1px solid var(--color-border);
+            background: rgba(20, 29, 47, 0.72);
+            border-radius: 4px;
+        }
+
+        .impact-item strong {
+            display: block;
+            margin-bottom: 0.35rem;
+        }
+
+        .impact-item p {
+            margin: 0;
+        }
+
         /* Media Gallery */
         .story-gallery {
             margin: 3rem 0;
@@ -1035,19 +1057,250 @@
     <!-- Projects Sub-Navigation -->
     <div class="projects-subnav">
         <div class="subnav-container">
-            <a href="#wilayah-studi" class="subnav-link active">Wilayah Studi</a>
-            <a href="#project-2" class="subnav-link">Project Two</a>
-            <a href="#project-3" class="subnav-link">Project Three</a>
+            <a href="#wastewater-dashboard" class="subnav-link active">Wastewater Dashboard</a>
+            <a href="#aceh-risk-map" class="subnav-link">Aceh Risk Map</a>
+            <a href="#wilayah-studi" class="subnav-link">Wilayah Studi</a>
         </div>
     </div>
 
     <!-- Main Projects Container -->
     <main>
 
-        <!-- Project 1: Wilayah Studi -->
+        <!-- Project 1: Wastewater Dashboard -->
+        <section class="project-story" id="wastewater-dashboard">
+            <div class="story-container">
+                <div class="story-header">
+                    <div>
+                        <div class="story-meta">
+                            <span class="story-category">Data Visualization</span>
+                            <div class="story-date">2025</div>
+                        </div>
+                        <h2 class="story-title">Domestic Wastewater <em>Dashboard</em></h2>
+                        <p class="story-intro">Interactive sanitation dashboards that translated national indicators into executive-ready views for Indonesia's domestic wastewater roadmap.</p>
+                        <div class="story-tags">
+                            <span class="story-tag">Looker Studio</span>
+                            <span class="story-tag">DataWrapper</span>
+                            <span class="story-tag">Google Colab</span>
+                            <span class="story-tag">QGIS</span>
+                        </div>
+                    </div>
+                    <div class="story-featured-media">
+                        <img src="images/projects/wastewater-dashboard.png" alt="Domestic wastewater dashboard overview">
+                    </div>
+                </div>
+
+                <div class="story-content">
+                    <div class="story-sidebar">
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Role</div>
+                            <div class="sidebar-value">Database and Visualisation Expert</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Technologies</div>
+                            <ul class="sidebar-list">
+                                <li>Looker Studio</li>
+                                <li>Google Colab</li>
+                                <li>QGIS Isochrone</li>
+                                <li>DataWrapper</li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Scale</div>
+                            <div class="sidebar-value">1 Roadmap Document</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Audience</div>
+                            <div class="sidebar-value">Senior ministry leadership and national sanitation stakeholders</div>
+                        </div>
+                    </div>
+
+                    <div class="story-body">
+                        <h3>Project Overview</h3>
+                        <p>Developed interactive dashboards to visualize national sanitation indicators, directly supporting the Ministry's National Roadmap on Domestic Wastewater Management and enabling evidence-based policy decision-making.</p>
+
+                        <h3>Key Features</h3>
+                        <p><strong>Structured Data Management:</strong> Designed and maintained a cross-municipal database to track sanitation infrastructure while improving data integrity, security, and cross-divisional access.</p>
+                        <p><strong>Analytical Reporting:</strong> Produced high-level narratives and technical summaries that translated complex data trends into actionable insight for government stakeholders.</p>
+
+                        <h3>Impact</h3>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <strong>Data-Driven Policy Formulation</strong>
+                                <p>Translated raw national sanitation indicators into high-impact visual narratives for ministerial leadership.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Operational Efficiency</strong>
+                                <p>Streamlined infrastructure tracking through a centralized database and reduced cross-divisional data silos.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Stakeholder Empowerment</strong>
+                                <p>Improved stakeholder capacity to interpret spatial and sectoral data for targeted resource allocation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item full-width">
+                            <img src="images/projects/wastewater-dashboard.png" alt="Dashboard view of national sanitation indicators">
+                            <div class="gallery-caption">
+                                <p>Executive dashboard view for national sanitation indicator review</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/projects/wastewater-1.jpg" alt="Wastewater infrastructure field documentation">
+                            <div class="gallery-caption">
+                                <p>Field context supporting infrastructure tracking and validation</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/projects/wastewater-2.png" alt="Wastewater dashboard supporting analysis">
+                            <div class="gallery-caption">
+                                <p>Analytical views prepared for roadmap discussion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-stats">
+                    <div class="story-stat">
+                        <div class="story-stat-number">2025</div>
+                        <div class="story-stat-label">Project Year</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">1</div>
+                        <div class="story-stat-label">Roadmap Document</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">3</div>
+                        <div class="story-stat-label">Core Tools</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">National</div>
+                        <div class="story-stat-label">Planning Scope</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2: Aceh Risk Map -->
+        <section class="project-story" id="aceh-risk-map">
+            <div class="story-container">
+                <div class="story-header reverse">
+                    <div>
+                        <div class="story-meta">
+                            <span class="story-category">Geospatial Analysis</span>
+                            <div class="story-date">2017</div>
+                        </div>
+                        <h2 class="story-title">Aceh Districts <em>Risk Map</em></h2>
+                        <p class="story-intro">Spatial risk modeling and disaster contingency mapping for district-level planning within a UN intergovernmental framework.</p>
+                        <div class="story-tags">
+                            <span class="story-tag">ArcMap</span>
+                            <span class="story-tag">Remote Sensing</span>
+                            <span class="story-tag">QGIS</span>
+                            <span class="story-tag">Risk Modeling</span>
+                        </div>
+                    </div>
+                    <div class="story-featured-media">
+                        <img src="images/projects/sabang-extreme-weather.png" alt="Aceh extreme weather risk map">
+                    </div>
+                </div>
+
+                <div class="story-content">
+                    <div class="story-sidebar">
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Role</div>
+                            <div class="sidebar-value">GIS Assistant</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Technologies</div>
+                            <ul class="sidebar-list">
+                                <li>ArcMap</li>
+                                <li>Data Driven Page</li>
+                                <li>Remote Sensing (ENVI)</li>
+                                <li>QGIS</li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Scale</div>
+                            <div class="sidebar-value">7 districts mapped; 6 hazard categories; 7 contingency plan documents</div>
+                        </div>
+                    </div>
+
+                    <div class="story-body">
+                        <h3>Project Overview</h3>
+                        <p>Spearheaded spatial risk modeling and provided critical geospatial analysis for District Disaster Management and Contingency Plans, delivering evidence-based insights for disaster policy decision-making.</p>
+
+                        <h3>Key Features</h3>
+                        <p><strong>Methodological Compliance:</strong> Applied the Perka 3/2012 BNPB regulatory framework to keep risk assessment standardized across districts.</p>
+                        <p><strong>Advanced Quantitative Analysis:</strong> Conducted cross-analysis using MS Excel PivotTables to extract actionable patterns from complex disaster risk datasets.</p>
+
+                        <h3>Impact</h3>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <strong>Enhanced Disaster Preparedness</strong>
+                                <p>Converted complex geospatial hazard data into risk maps that contributed to 7 district-level contingency plans.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Regulatory Alignment</strong>
+                                <p>Supported consistent BNPB Perka 3/2012 implementation across regional planning workflows.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Strategic Policy Support</strong>
+                                <p>Equipped local government decision-makers with visual tools for resource allocation and emergency response planning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item full-width">
+                            <img src="images/projects/sabang-extreme-weather.png" alt="Extreme weather risk map for Sabang">
+                            <div class="gallery-caption">
+                                <p>Extreme weather risk map prepared for district contingency planning</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/projects/sabang-flash-flood.png" alt="Flash flood risk map for Sabang">
+                            <div class="gallery-caption">
+                                <p>Flash flood hazard and risk visualization</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/projects/sabang-drought.png" alt="Drought risk map for Sabang">
+                            <div class="gallery-caption">
+                                <p>Drought risk assessment output for local planning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-stats">
+                    <div class="story-stat">
+                        <div class="story-stat-number">7</div>
+                        <div class="story-stat-label">Districts Mapped</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">6</div>
+                        <div class="story-stat-label">Hazard Categories</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">7</div>
+                        <div class="story-stat-label">Plan Documents</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">2017</div>
+                        <div class="story-stat-label">Project Year</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3: Wilayah Studi -->
         <section class="project-story" id="wilayah-studi">
             <div class="story-container">
-                <!-- Project Header -->
                 <div class="story-header">
                     <div>
                         <div class="story-meta">
@@ -1064,12 +1317,10 @@
                         </div>
                     </div>
                     <div class="story-featured-media">
-                        <img src="images/wilayah-studi-hero.png" alt="Map Designer Interface">
+                        <img src="images/projects/watershed-map.jpg" alt="Publication-ready watershed map output">
                     </div>
                 </div>
 
-<<<<<<< Updated upstream
-                <!-- Project Content -->
                 <div class="story-content">
                     <div class="story-sidebar">
                         <div class="sidebar-section">
@@ -1086,259 +1337,29 @@
                             </ul>
                         </div>
                         <div class="sidebar-section">
-                            <div class="sidebar-label">Timeline</div>
-                            <div class="sidebar-value">6 months</div>
-                        </div>
-                        <div class="sidebar-section">
                             <div class="sidebar-label">Status</div>
-                            <div class="sidebar-value">Active Development</div>
-=======
-                    <h3>GEDSI Integration</h3>
-                    <p>Working closely with the <strong>GEDSI (Gender Equality, Disability, and Social Inclusion) team</strong>, I ensured that climate risk assessments incorporated participatory approaches. Community mapping sessions helped identify vulnerable populations and their specific needs in climate adaptation planning.</p>
-
-                    <!-- Gallery Section -->
-                    <div class="story-gallery">
-                        <div class="gallery-grid">
-                            <div class="gallery-item full-width">
-                                <!-- Replace with your actual image -->
-                                <div class="media-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                        <circle cx="8.5" cy="8.5" r="1.5"/>
-                                        <polyline points="21,15 16,10 5,21"/>
-                                    </svg>
-                                    <span>Add watershed analysis map</span>
-                                </div>
-                                <!-- <img src="images/projects/watershed-map.jpg" alt="Watershed Analysis Map"> -->
-                                <div class="gallery-caption">
-                                    <p>Comprehensive watershed identification with community</p>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="media-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                        <circle cx="8.5" cy="8.5" r="1.5"/>
-                                        <polyline points="21,15 16,10 5,21"/>
-                                    </svg>
-                                    <span>Vulnerability assessment</span>
-                                </div>
-                                <!-- <img src="images/projects/climate-2.jpg" alt="Vulnerability Assessment"> -->
-                                <div class="gallery-caption">
-                                    <p>Climate vulnerability index mapping</p>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="media-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                        <circle cx="8.5" cy="8.5" r="1.5"/>
-                                        <polyline points="21,15 16,10 5,21"/>
-                                    </svg>
-                                    <span>Community mapping session</span>
-                                </div>
-                                <!-- <img src="images/projects/climate-3.jpg" alt="Community Mapping"> -->
-                                <div class="gallery-caption">
-                                    <p>Participatory mapping with local communities</p>
-                                </div>
-                            </div>
->>>>>>> Stashed changes
+                            <div class="sidebar-value">Active development</div>
                         </div>
                     </div>
 
                     <div class="story-body">
                         <h3>Project Overview</h3>
-                        <p>Wilayah Studi is a sophisticated web application built with React and TypeScript that enables cartographers and GIS professionals to design publication-ready maps with unprecedented ease. The application features a responsive SVG canvas with support for multiple projections.</p>
+                        <p>Wilayah Studi is a React and TypeScript application that helps cartographers and GIS professionals design publication-ready maps. It combines a responsive canvas, projection controls, and export-oriented layout tools.</p>
 
                         <h3>Key Features</h3>
-                        <p><strong>Projection Support:</strong> Toggle between Mercator and Equirectangular projections to visualize data in different coordinate systems and assess geographic distortion.</p>
-                        <p><strong>Dynamic Styling:</strong> Customize colors, fonts, and spatial layers with real-time preview capabilities.</p>
-                        <p><strong>Export Options:</strong> Generate high-resolution SVG exports suitable for publication in academic papers, reports, and professional documentation.</p>
-                        <p><strong>GIS Integration:</strong> Import and process vector data from GeoJSON, KML, and GeoPackage formats.</p>
-
-                        <h3>Technical Implementation</h3>
-                        <p>The project leverages modern web technologies including Vite for rapid development, TypeScript for type safety, and custom projection mathematics for accurate coordinate transformations. The application includes sophisticated data parsing for multiple geospatial formats and a custom SVG rendering engine.</p>
-                    </div>
-                </div>
-
-                <!-- Project Gallery -->
-                <div class="story-gallery">
-                    <div class="gallery-grid">
-                        <div class="gallery-item full-width">
-                            <img src="images/wilayah-studi-full.png" alt="Full Map Designer Interface">
-                            <div class="gallery-caption">
-                                <p>Complete map designer workflow showing multiple layers and controls</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/wilayah-studi-projection.png" alt="Projection Selection">
-                            <div class="gallery-caption">
-                                <p>Projection switching between Mercator and Equirectangular</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/wilayah-studi-export.png" alt="Export Options">
-                            <div class="gallery-caption">
-                                <p>SVG export dialog with layout template options</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Stats -->
-                <div class="story-stats">
-                    <div class="story-stat">
-                        <div class="story-stat-number">5000+</div>
-                        <div class="story-stat-label">Lines of Code</div>
-                    </div>
-                    <div class="story-stat">
-                        <div class="story-stat-number">15+</div>
-                        <div class="story-stat-label">Geographic Datasets</div>
-                    </div>
-                    <div class="story-stat">
-                        <div class="story-stat-number">8</div>
-                        <div class="story-stat-label">Export Layouts</div>
-                    </div>
-                    <div class="story-stat">
-                        <div class="story-stat-number">3</div>
-                        <div class="story-stat-label">Projection Types</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project 2 -->
-        <section class="project-story" id="project-2">
-            <div class="story-container">
-                <div class="story-header reverse">
-                    <div>
-                        <div class="story-meta">
-                            <span class="story-category">Data Engineering</span>
-                            <div class="story-date">2023</div>
-                        </div>
-                        <h2 class="story-title">Geospatial <em>Data Pipeline</em></h2>
-                        <p class="story-intro">Automated ETL system for processing and validating large-scale geographic datasets with quality assurance protocols.</p>
-                        <div class="story-tags">
-                            <span class="story-tag">Python</span>
-                            <span class="story-tag">ETL</span>
-                            <span class="story-tag">Data Quality</span>
-                            <span class="story-tag">PostGIS</span>
-                        </div>
-                    </div>
-                    <div class="story-featured-media">
-                        <img src="images/data-pipeline-hero.png" alt="Data Pipeline Architecture">
-                    </div>
-                </div>
-
-                <div class="story-content">
-                    <div class="story-sidebar">
-                        <div class="sidebar-section">
-                            <div class="sidebar-label">Role</div>
-                            <div class="sidebar-value">Data Engineer</div>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="sidebar-label">Technologies</div>
-                            <ul class="sidebar-list">
-                                <li>Python</li>
-                                <li>PostgreSQL</li>
-                                <li>PostGIS</li>
-                                <li>Apache Airflow</li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="sidebar-label">Scale</div>
-                            <div class="sidebar-value">500GB+ annually</div>
-                        </div>
-                    </div>
-
-                    <div class="story-body">
-                        <h3>Pipeline Architecture</h3>
-                        <p>This comprehensive ETL solution processes geographic data from multiple sources, validates topology, and loads standardized datasets into a PostGIS warehouse.</p>
-
-                        <h3>Quality Assurance</h3>
-                        <p>Implements sophisticated validation routines including geometry checking, attribute consistency validation, and temporal analysis.</p>
+                        <p><strong>Projection Support:</strong> Toggle between map projections to evaluate geographic distortion and presentation choices.</p>
+                        <p><strong>Dynamic Styling:</strong> Customize colors, typography, and spatial layers with real-time preview.</p>
+                        <p><strong>Export Options:</strong> Generate publication-ready SVG outputs for reports, articles, and technical documentation.</p>
                     </div>
                 </div>
 
                 <div class="story-gallery">
                     <div class="gallery-grid">
                         <div class="gallery-item full-width">
-                            <img src="images/pipeline-workflow.png" alt="Pipeline Workflow">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/pipeline-metrics.png" alt="Performance Metrics">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/pipeline-validation.png" alt="Validation Results">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project 3 -->
-        <section class="project-story" id="project-3">
-            <div class="story-container">
-                <div class="story-header">
-                    <div>
-                        <div class="story-meta">
-                            <span class="story-category">Web Application</span>
-                            <div class="story-date">2023</div>
-                        </div>
-                        <h2 class="story-title">Spatial <em>Analysis Tool</em></h2>
-                        <p class="story-intro">Interactive geospatial analysis platform enabling real-time spatial queries and visualization.</p>
-                        <div class="story-tags">
-                            <span class="story-tag">GIS</span>
-                            <span class="story-tag">Full Stack</span>
-                            <span class="story-tag">Real-time</span>
-                            <span class="story-tag">Analytics</span>
-                        </div>
-                    </div>
-                    <div class="story-featured-media">
-                        <img src="images/spatial-tool-hero.png" alt="Spatial Analysis Tool">
-                    </div>
-                </div>
-
-                <div class="story-content">
-                    <div class="story-sidebar">
-                        <div class="sidebar-section">
-                            <div class="sidebar-label">Role</div>
-                            <div class="sidebar-value">Full Stack Developer</div>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="sidebar-label">Technologies</div>
-                            <ul class="sidebar-list">
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>PostGIS</li>
-                                <li>Leaflet</li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="sidebar-label">Users</div>
-                            <div class="sidebar-value">50+ daily active</div>
-                        </div>
-                    </div>
-
-                    <div class="story-body">
-                        <h3>Features</h3>
-                        <p>Real-time spatial queries, buffer analysis, overlay operations, and advanced filtering capabilities.</p>
-
-                        <h3>Performance</h3>
-                        <p>Optimized for handling large datasets with sub-second query response times through strategic indexing and query optimization.</p>
-                    </div>
-                </div>
-
-                <div class="story-gallery">
-                    <div class="gallery-grid">
-                        <div class="gallery-item full-width">
-                            <img src="images/spatial-tool-interface.png" alt="Analysis Interface">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/spatial-results.png" alt="Analysis Results">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/spatial-export.png" alt="Export Results">
+                            <img src="images/projects/watershed-map.jpg" alt="Watershed analysis map designed for publication">
+                            <div class="gallery-caption">
+                                <p>Publication-oriented watershed map composition</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1349,19 +1370,19 @@
 
     <!-- Project Navigation -->
     <div class="project-nav">
-        <a href="#" class="project-nav-item">
-            <div class="project-nav-label">Previous Project</div>
-            <div class="project-nav-title">Urban Planning Analysis</div>
+        <a href="#wastewater-dashboard" class="project-nav-item">
+            <div class="project-nav-label">Featured Highlight</div>
+            <div class="project-nav-title">Domestic Wastewater Dashboard</div>
         </a>
-        <a href="#" class="project-nav-item next">
-            <div class="project-nav-label">Next Project</div>
-            <div class="project-nav-title">Climate Data Visualization</div>
+        <a href="#aceh-risk-map" class="project-nav-item next">
+            <div class="project-nav-label">Risk Mapping Highlight</div>
+            <div class="project-nav-title">Aceh Districts Risk Map</div>
         </a>
     </div>
 
     <!-- Back to Projects -->
     <div class="back-to-projects">
-        <a href="/">← Back to Home</a>
+        <a href="/">&larr; Back to Home</a>
     </div>
 
     <!-- Footer -->
