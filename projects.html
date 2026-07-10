@@ -1007,6 +1007,80 @@
         .subnav-link:hover {
             color: var(--color-accent);
         }
+
+        /* Document Preview Card */
+        .document-preview-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-bg-elevated) 100%);
+            padding: 3rem;
+            text-align: center;
+            gap: 1.5rem;
+            transition: all 0.4s ease;
+        }
+        .document-preview-card:hover {
+            background: linear-gradient(135deg, var(--color-bg-elevated) 0%, var(--color-surface) 100%);
+        }
+        .doc-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(74, 144, 217, 0.1);
+            color: var(--color-accent);
+            transition: all 0.3s ease;
+        }
+        .document-preview-card:hover .doc-icon {
+            background: var(--color-accent);
+            color: var(--color-bg);
+            transform: scale(1.1);
+        }
+        .doc-icon svg {
+            width: 40px;
+            height: 40px;
+        }
+        .doc-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .doc-type {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+        .doc-source {
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+        }
+        .doc-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.8rem;
+            background: transparent;
+            border: 1px solid var(--color-accent);
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        .doc-btn:hover {
+            background: var(--color-accent);
+            color: var(--color-bg);
+        }
     </style>
 </head>
 
@@ -1059,6 +1133,8 @@
         <div class="subnav-container">
             <a href="#wastewater-dashboard" class="subnav-link active">Wastewater Dashboard</a>
             <a href="#aceh-risk-map" class="subnav-link">Aceh Risk Map</a>
+            <a href="#water-conservation-module" class="subnav-link">Water Conservation Module</a>
+            <a href="#pdam-gis-module" class="subnav-link">GIS for PDAM</a>
         </div>
     </div>
 
@@ -1291,6 +1367,202 @@
                     </div>
                     <div class="story-stat">
                         <div class="story-stat-number">2017</div>
+                        <div class="story-stat-label">Project Year</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3: Water Conservation Module -->
+        <section class="project-story" id="water-conservation-module">
+            <div class="story-container">
+                <div class="story-header">
+                    <div>
+                        <div class="story-meta">
+                            <span class="story-category">Toolkit Development</span>
+                            <div class="story-date">2026</div>
+                        </div>
+                        <h2 class="story-title">Water Conservation <em>Module</em></h2>
+                        <p class="story-intro">A community-oriented facilitation guide developed to address local water conservation and climate adaptation issues through collaborative action planning.</p>
+                        <div class="story-tags">
+                            <span class="story-tag">Community Engagement</span>
+                            <span class="story-tag">Climate Change</span>
+                            <span class="story-tag">WASH</span>
+                            <span class="story-tag">Water Security</span>
+                        </div>
+                    </div>
+                    <div class="story-featured-media">
+                        <div class="document-preview-card">
+                            <div class="doc-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </div>
+                            <div class="doc-meta">
+                                <span class="doc-type">PDF Module</span>
+                                <span class="doc-source">Google Drive</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1Y8efz1nIgFtFr6j_u5llUggECoT1mYq0/view?usp=drive_link" target="_blank" class="doc-btn">
+                                Open Document ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-content">
+                    <div class="story-sidebar">
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Role</div>
+                            <div class="sidebar-value">Co-Developer & Content Designer</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Team / Collaborators</div>
+                            <div class="sidebar-value">Civil Engineer & Behavior Change Management (BCM) / Communications Specialist</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Target Audience</div>
+                            <div class="sidebar-value">Community facilitators, local leaders, and environmental field officers</div>
+                        </div>
+                    </div>
+
+                    <div class="story-body">
+                        <h3>Project Overview</h3>
+                        <p>Collaborating in a multidisciplinary team consisting of a civil engineer and a behavior change management specialist, I developed this water conservation module to serve as a comprehensive guide for facilitators working within community settings. It bridges technical water-engineering concepts with social mobilization strategies.</p>
+
+                        <h3>Key Features</h3>
+                        <p><strong>Facilitator-Led Delivery:</strong> Structured specifically for community-level workshops, guiding facilitators to deliver concepts regarding local water resource management and climate change hazards.</p>
+                        <p><strong>Multidisciplinary Integration:</strong> Blends engineering principles for water safety with communication techniques to drive behavioral adaptation and active community participation.</p>
+                        <p><strong>Actionable Outputs:</strong> Leads participants through interactive problem-solving exercises, culminating in the creation of a localized, community-owned work plan for water conservation.</p>
+
+                        <h3>Expected Impact</h3>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <strong>Localized Climate Adaptation</strong>
+                                <p>Empowers community members to assess water scarcity and climate risks and take immediate collective action.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Social Behavior Change</strong>
+                                <p>Encourages sustainable water consumption habits through structured group learning and discussion.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Structured Community Work Plans</strong>
+                                <p>Fosters accountability by ensuring workshops end with a concrete, actionable roadmap for local water security.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-stats">
+                    <div class="story-stat">
+                        <div class="story-stat-number">3</div>
+                        <div class="story-stat-label">Collaborating Specialists</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">Facilitator</div>
+                        <div class="story-stat-label">Delivery Mode</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">Action-Plan</div>
+                        <div class="story-stat-label">Primary Output</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">2026</div>
+                        <div class="story-stat-label">Project Year</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 4: GIS Application for PDAM -->
+        <section class="project-story" id="pdam-gis-module">
+            <div class="story-container">
+                <div class="story-header reverse">
+                    <div>
+                        <div class="story-meta">
+                            <span class="story-category">GIS Data Engineering</span>
+                            <div class="story-date">2026</div>
+                        </div>
+                        <h2 class="story-title">GIS Application for <em>PDAM</em></h2>
+                        <p class="story-intro">A technical guidebook designed for municipal water utility (PDAM) staff to develop internal GIS data pipelines and perform network and hydraulic distribution analysis.</p>
+                        <div class="story-tags">
+                            <span class="story-tag">QGIS / ArcMap</span>
+                            <span class="story-tag">Network Analysis</span>
+                            <span class="story-tag">Water Utility</span>
+                            <span class="story-tag">Data Pipelines</span>
+                        </div>
+                    </div>
+                    <div class="story-featured-media">
+                        <div class="document-preview-card">
+                            <div class="doc-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </div>
+                            <div class="doc-meta">
+                                <span class="doc-type">PDF Module</span>
+                                <span class="doc-source">Google Drive</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1DCRBblt1HtX8s1XpQoNY4rRQ4MVy6rtJ/view?usp=drive_link" target="_blank" class="doc-btn">
+                                Open Document ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-content">
+                    <div class="story-sidebar">
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Role</div>
+                            <div class="sidebar-value">GIS Analyst & Curriculum Developer</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Target Audience</div>
+                            <div class="sidebar-value">PDAM (Municipal Water Utility) Technical & Engineering Staff</div>
+                        </div>
+                        <div class="sidebar-section">
+                            <div class="sidebar-label">Analysis Methods</div>
+                            <div class="sidebar-value">Geometric Network Analysis, Hydraulic Modeling, Spatial Database Design</div>
+                        </div>
+                    </div>
+
+                    <div class="story-body">
+                        <h3>Project Overview</h3>
+                        <p>This technical guide is structured to help PDAM (regional water utility) staff build internal capacity in geospatial technology. It enables organizations to establish clean GIS data structures and conduct advanced distribution network simulations internally.</p>
+
+                        <h3>Key Features</h3>
+                        <p><strong>Database Standardization:</strong> Step-by-step methods for utility staff to collect, structure, and sanitize spatial database assets (pipelines, valves, customer meters) inside a unified GIS schema.</p>
+                        <p><strong>Hydraulic Network Analysis:</strong> Practical tutorials on utilizing geographic networks to calculate distribution performance, mapping water velocity profiles, and simulating pressure grids throughout the pipe network.</p>
+                        <p><strong>Capacity Building Focus:</strong> Shifts utility management workflows from external reliance to an active, self-sustaining spatial data operations framework.</p>
+
+                        <h3>Expected Impact</h3>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <strong>Improved Network Efficiency</strong>
+                                <p>Empowers staff to use pressure and velocity simulations to detect leaks, bottlenecks, and low-flow sectors before failures occur.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Organizational Self-Sufficiency</strong>
+                                <p>Saves operational costs and speeds up planning by establishing internal, permanent spatial mapping capabilities.</p>
+                            </div>
+                            <div class="impact-item">
+                                <strong>Data-Driven Capital Planning</strong>
+                                <p>Supports decision-makers with robust spatial models to allocate resources for pipe replacements and expansion plans.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-stats">
+                    <div class="story-stat">
+                        <div class="story-stat-number">PDAM</div>
+                        <div class="story-stat-label">Target Utility</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">Network</div>
+                        <div class="story-stat-label">Analysis Type</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">Velocity/Pressure</div>
+                        <div class="story-stat-label">Core Simulation</div>
+                    </div>
+                    <div class="story-stat">
+                        <div class="story-stat-number">2026</div>
                         <div class="story-stat-label">Project Year</div>
                     </div>
                 </div>
