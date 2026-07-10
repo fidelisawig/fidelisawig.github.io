@@ -1,0 +1,8 @@
+# Binary assets
+images/
+*.zip
+
+# OS / Editor directories
+.DS_Store
+.claude/
+.agents/
